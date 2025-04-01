@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programme de la nuit d'Excellence | Olam Agri & Olam</title>
     <link rel="stylesheet" href="style.css">
+    <script src="confetti.js"></script>
 </head>
 <body>
     <div class="page-wrapper">
@@ -32,5 +33,29 @@
             </div>
         </div>
     </div>
+    <script>
+
+        // for starting the confetti
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  for stopping the confetti
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+        // after this here we are calling both the function so it works
+        start();
+        stop();
+
+        // if you dont want to make it stop and make it infinite you can just remove the stop function 😊
+
+    </script>
 </body>
 </html>
